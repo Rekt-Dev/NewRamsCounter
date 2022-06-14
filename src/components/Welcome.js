@@ -11,8 +11,12 @@ const Welcome = () => {
     <>
       <h1>{"Welcome Page"}</h1>
       <div>
-        {loginState && <button onClick={logoutClick}>{"Log out"}</button>}
-        {!loginState && <Link to="login">{"login"}</Link>}
+        {loginState && <button onClick={logoutClick}>
+        {"Log out"}</button>}
+        {!loginState && 
+        <Link to="login">
+        {"login"}
+        </Link>}
 
         <br />
         <Link to="counter">{"Go to counter"}</Link>
